@@ -2,6 +2,8 @@
 
 Ce repository contient le backend du projet NodeJsFinal, un serveur de fichiers avec des fonctionnalités d'authentification, de gestion de fichiers, et de liens de partage.
 
+### Ce repository correspond à la partie Backend du projet 'NodeJsTransfert', afin de pouvoir le tester et en profiter dans son intégralité, je vous invite à vous rendre [ici](https://github.com/TheKyyn/NodeJsFinal).
+
 ## Fonctionnalités
 
 - **Authentification** : Inscription, connexion avec token JWT.
