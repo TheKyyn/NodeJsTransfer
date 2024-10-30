@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: file_server_backend
+    environment:
+      - NODE_ENV=development
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql
+
+
+  mysql:
+    image: mysql:8
+    container_name: NodeJsDB
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: NodeJsDB
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+
+volumes:
+  mysql_data:
